@@ -1,15 +1,20 @@
 # 🩺 Chronic Disease Prediction using Machine Learning
 
 ## 📌 Overview
-This project predicts chronic disease risk using a synthetically generated Electronic Health Record (EHR)-like dataset. It demonstrates the complete machine learning workflow, including data generation, preprocessing, model training, evaluation, and visualization.
+This project predicts chronic disease risk using a synthetically generated Electronic Health Record (EHR)-like dataset. It demonstrates the complete machine learning pipeline, including data generation, preprocessing, exploratory data analysis (EDA), model training, evaluation, and comparison.
+
+---
 
 ## 🚀 Features
-- Synthetic EHR dataset generation
-- Data preprocessing and encoding
+- Synthetic EHR-like dataset generation
+- Data preprocessing and feature engineering
 - Exploratory Data Analysis (EDA)
 - Random Forest Classification
-- Model evaluation using Accuracy, Precision, Recall, and F1-Score
-- Confusion Matrix and Feature Importance visualization
+- Logistic Regression Classification
+- Model comparison using Accuracy, F1-Score, and ROC-AUC
+- Confusion Matrix, ROC Curve, Correlation Heatmap, and Feature Importance visualization
+
+---
 
 ## 🛠 Tech Stack
 - Python
@@ -20,9 +25,27 @@ This project predicts chronic disease risk using a synthetically generated Elect
 - Scikit-learn
 - Jupyter Notebook
 
-## 📊 Model
-- **Algorithm:** Random Forest Classifier
-- **Accuracy:** **95.67%**
+---
+
+## 📊 Model Performance
+
+| Model | Accuracy | F1-Score | ROC-AUC |
+|--------|---------:|---------:|---------:|
+| Random Forest | 96.00% | 0.9752 | 0.9864 |
+| Logistic Regression | **98.00%** | **0.9877** | **0.9975** |
+
+**Best Performing Model:** Logistic Regression
+
+---
+
+## 📈 Visualizations
+- Pair Plot
+- Correlation Heatmap
+- Feature Importance
+- Confusion Matrix
+- ROC Curve
+
+---
 
 ## ▶️ How to Run
 
@@ -30,17 +53,19 @@ This project predicts chronic disease risk using a synthetically generated Elect
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-Open **`chronic_diseases.ipynb`** and run all the cells.
+Open `chronic_diseases.ipynb` and run all the cells.
 
-## 📁 Files
-- `chronic_diseases.ipynb`
-- `synthetic_chronic_diseases.csv`
-- `README.md`
+---
 
-## 🔮 Future Improvements
-- Compare multiple ML algorithms
-- Hyperparameter tuning
-- Cross-validation
-- Real-world healthcare datasets
-- Web deployment using Flask/Streamlit
+## 📁 Project Structure
+
+```
+Chronic_Diseases/
+│── chronic_diseases.ipynb
+│── synthetic_chronic_diseases.csv
+│── README.md
+```
+
+---
+
 
